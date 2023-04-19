@@ -1,0 +1,66 @@
+@import '../sass/utils/mixins';
+.header{
+    @include flex(row, space-between, center);
+    height: 68px;
+    max-width: 95%;
+    margin: 0 auto;
+    @media screen and (max-width: 900px){
+        height: 40px;
+    }
+    img{
+        height: 60%;
+        @media screen and (max-width: 700px){
+            height: 40px;
+        }
+    }
+}
+
+a {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 142.6%;
+    color: #FF6060;
+}
+
+.acceuil{
+    position: absolute;
+    left: 75.08%;
+    right: 13.95%;
+    top: 25%;
+    bottom: 25%;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 142.6%;
+    /* or 34px */
+
+    display: flex;
+    align-items: flex-end;
+    text-align: right;
+    text-decoration-line: underline;
+
+    color: #FF6060;
+}
+
+nav {
+    display: flex;
+    gap: 50px;
+    color: #FF6060;
+    font-size: clamp(12px, 2.5vw, 24px);
+    @media screen and (max-width: 700px){
+        gap: 20px;
+    }
+    &_item{
+        &_active{
+            position: relative;
+            color: #FF6060;
+            transition: all 0.2s ease-in-out;
+            text-decoration: underline solid #FF6060; 
+            
+        }
+    }
+}
