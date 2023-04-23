@@ -1,0 +1,29 @@
+@import '../../sass/base/variables';
+@import '../../sass/utils/mixins.scss';
+.footerBloc {
+		@include flex(column);
+		gap: 50px;
+		width: 100%;
+		height: 209px;
+		background-color: #000;
+
+	&__text {
+	
+		display: flex;
+		align-items: flex-end;
+		justify-content: center;
+		color: $tertiary-color;
+		width: 100%;
+		margin: 4% 0 3% 0;
+
+		@media screen and (min-width: $breakpoint-desktop) {
+			
+		}
+	}
+
+	img {
+		margin-top: 2%;
+		width: 122px;
+		height: 40px;
+	}
+}

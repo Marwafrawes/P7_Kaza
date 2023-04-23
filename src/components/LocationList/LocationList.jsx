@@ -5,7 +5,7 @@ export const LocationList = () => {
     return(
         <div className="locationsContainer">
             {
-                data.map(location => <LocationCard location={location} />)
+                data.map(location => <LocationCard location={location} key={location.id} />)
             }
         </div>
     );
