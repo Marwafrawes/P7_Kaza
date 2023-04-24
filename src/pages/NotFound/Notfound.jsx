@@ -1,5 +1,5 @@
-import '../NotFound/Notfound.js'; 
-import {Header} from "../../pages/home";
+import './Notfound.scss'; 
+import {Header} from "../../components/Header/Header";
 import { Link } from 'react-router-dom';
 
 export const NotFound = () => {

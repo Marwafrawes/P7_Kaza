@@ -11,8 +11,8 @@ export const Header = () => {
         <div className='header'>
             <img src={Logo} alt="kasa, location d'appartements, logo"/>
             <nav>
-                <Link>Acceuil</Link>
-                <Link>A propos</Link>
+                <Link to={"/"}>Acceuil</Link>
+                <Link to="/about">A propos</Link>
             </nav>
             <Outlet />
         </div>
