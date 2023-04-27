@@ -1,0 +1,36 @@
+.hostComp {
+	@include flex-end;
+	width: 100%;
+    &__hostPicture {
+        display: flex;
+        margin-left: 10px;
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        background: #c4c4c4;
+
+	@media screen and (min-width: $breakpoint-desktop) {
+		width: 64px;
+		height: 64px;
+	
+
+&__hostName {
+	@include flex-end;
+	width: 63px;
+	height: 66px;
+	text-align: right;
+	@include font(12px, 500);
+
+	@media screen and (min-width: $breakpoint-desktop) {
+		@include font(18px, 500);
+
+	}
+}
+}
+}
+};
+.img {
+    @include WH-full;
+    border-radius: 50%;
+    object-fit: cover;
+}; 
