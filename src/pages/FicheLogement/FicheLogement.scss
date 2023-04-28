@@ -1,5 +1,23 @@
+.container{
+margin: 0px 25px 0px;
+
+
 .Row{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+};
+
+.logementCollapse {
+    display: flex;
+    justify-content: space-between;
+    gap: 70px;
+    margin: 30px auto;
+    width: 95%;
+    
+
+    &__item{
+        width: 50%;
+    }
+}
 }

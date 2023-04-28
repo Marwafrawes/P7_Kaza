@@ -1,7 +1,10 @@
+import "./Tags.scss";
 export const Tag =  (props) =>{
 	return (
 		<div className="tagContainer">
-			<span className="tagContainer__tagButton">{props.tags}</span>
-		</div>
+            {props.tags.map((tag) =>
+                <span className="tagContainer__tagButton">{tag}</span>
+            )}
+        </div>
 	);
 }
