@@ -1,0 +1,31 @@
+@import "../../sass/base/variables";
+@import "../../sass/main.scss";
+
+.titleStyle
+{
+
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 500;
+font-size: 36px;
+line-height: 142.6%;
+width: 393px;
+margin-left: 10%;
+
+display: flex;
+align-items: flex-end;
+
+color: #FF6060;
+}; 
+.locationStyle{
+    width: 393px;
+    margin-left: 10%;
+
+font-family: 'Montserrat';
+font-weight: 500;
+font-size: 18px;
+line-height: 142.6%;
+display: flex;
+align-items: flex-end;
+color: $secondary-color;
+}

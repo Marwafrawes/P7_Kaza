@@ -32,6 +32,7 @@ export const Collapse = ({collapseObject}) => {
                             <p key={index}>{item}</p>
                         )
                     }) : collapseObject.texte
+                    
                     }
                 </div> 
             </div>

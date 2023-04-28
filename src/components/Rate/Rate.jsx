@@ -20,7 +20,7 @@ export const Rate = (score) => {
             ) : (
                 <img
                     key={level.toString()}
-                    className="star"
+                    className="rateComp__star"
                     src={starEmpty}
                     alt="rating star"
                 />
