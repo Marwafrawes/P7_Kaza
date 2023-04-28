@@ -38,6 +38,8 @@ export const FicheLogement = () => {
                     <Host host={logement.host} />
                     <Rate rate={logement.rating} />
                 </div>
+                </div>
+            <div className="container">
                 <div className="logementCollapse">
                     <div className="logementCollapse__item">
                         <Collapse collapseObject={description} />
