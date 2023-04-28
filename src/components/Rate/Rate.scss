@@ -4,7 +4,7 @@
 .rateComp {
     display: flex;
     justify-content:flex-end;
-    width: 98px;
+    width: 100%;
     height: 18px;
     margin-top: 24px;
 
@@ -21,6 +21,18 @@
     }
 }
 }
+
 };
 
-
+.xsDisplay {
+    display: none;
+  }
+  @media screen and (max-width: 550px) {
+    .xsDisplay {
+      display: flex;
+      justify-content: flex-start;
+    }
+    .lgDisplay {
+      display: none;
+    }
+  }

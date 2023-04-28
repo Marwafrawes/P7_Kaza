@@ -33,10 +33,10 @@ export const FicheLogement = () => {
                     <Tag tags={logement.tags} />
                 </div>
 
-                <div className="column" >
-                   
-                    <Host host={logement.host} />
-                    <Rate rate={logement.rating} />
+                <div className="column xsRow" >
+                <Rate className="xsDisplay rateComp" rate={logement.rating} />
+                <Host host={logement.host} />
+                <Rate className="lgDisplay rateComp" rate={logement.rating} />
                 </div>
                 </div>
             <div className="container">

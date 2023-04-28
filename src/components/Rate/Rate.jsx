@@ -3,11 +3,12 @@ import starEmpty from '../../assets/starEmpty.png';
 import "./Rate.scss";
 // creation d'une parametre score qui représente les étoiles pleines à afficher 
 export const Rate = (score) => {
+    
     const stars = [1, 2, 3, 4, 5];
     return(
     // la méthode "map" pour créer un tableau d'éléments d'image 
     //à partir des valeurs de l'ensemble d'étoiles [1,2,3,4,5]
-        <div className="rateComp">
+        <div className={score.className}>
         {stars.map((level) =>
             score.rate >= level ? (
                 <img
