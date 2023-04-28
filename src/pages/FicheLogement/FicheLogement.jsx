@@ -1,5 +1,5 @@
 import "./FicheLogement.scss";
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import { Header } from "../../components/Header/Header";
 import { Footer } from "../../components/Footer/Footer";
 import { data } from "../../data/datas";
@@ -9,19 +9,38 @@ import { Host } from "../../components/Host/Host"
 import { Rate } from "../../components/Rate/Rate";
 import { Tag } from "../../components/Tags/Tags"
 import { Title } from "../../components/Title/Title";
+import { useEffect, useState } from "react";
+
 
 export const FicheLogement = () => {
     const id = useParams('id').id;
     const logement = data.find(logement => logement.id === id);
+    const navigate = useNavigate();
 
-    const description = {
-        "title": "Description",
-        "texte": logement.description
-    }
-    const equipement = {
-        "title": "Equipements",
-        "texte": logement.equipments
-    }
+    const [description, setDescription] = useState({
+        title: "",
+        description: ""
+    });
+    const [equipement, setEquipement] = useState({
+        title: "",
+        description: ""
+    });
+    useEffect(() => {
+        if (!logement) {
+            navigate("/error");
+        }
+        else {
+            setDescription({
+                "title": "Description",
+                "texte": logement.description
+            })
+            setEquipement({
+                "title": "Equipements",
+                "texte": logement.equipments
+            })
+        }
+    }, []);
+
     return (
         <>
             <Header />
