@@ -7,13 +7,17 @@ margin: 0px 25px 0px;
     flex-direction: row;
     justify-content: space-between;
 };
+.column{
+    display: flex;
+    flex-direction: column;
+}
 
 .logementCollapse {
     display: flex;
     justify-content: space-between;
     gap: 70px;
     margin: 30px auto;
-    width: 95%;
+    width: 100%;
     
 
     &__item{
