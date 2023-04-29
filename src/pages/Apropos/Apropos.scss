@@ -14,8 +14,9 @@
     position: relative;
     @include flex;
     border-radius: 25px;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../../assets/Background_apropos.png');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.069), rgba(0, 0, 0, 0.183)), url('../../assets/background.png');
     background-position: center;
+    
     background-size: cover;
     height: 223px;
     padding: 20px;
