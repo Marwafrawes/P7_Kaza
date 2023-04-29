@@ -1,5 +1,6 @@
 import "./LocationCard.scss";
 import { Link } from "react-router-dom";
+// Location est une props qui contient les données de la localisation en question.
 
 export const LocationCard = ({location}) => {
     return(
